@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday!</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: pink;
+        color: white;
+        text-align: center;
+        padding: 50px;
+      }
+
+      h1 {
+        font-size: 3rem;
+        color: #ff69b4;
+        text-shadow: 2px 2px 5px #000;
+      }
+
+      p {
+        font-size: 1.5rem;
+        color: rgba(81, 6, 6, 0.574);
+      }
+
+      .heart {
+        font-size: 5rem;
+        color: red;
+        animation: heartbeat 1.5s infinite;
+      }
+
+      @keyframes heartbeat {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+      }
+
+      .button {
+        background-color: #ff69b4;
+        border: none;
+        color: white;
+        padding: 15px 30px;
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: 20px;
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      .button:hover {
+        background-color: #ff1493;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Happy Birthday, My Love! 💖</h1>
+    <p>
+      💖 Wishing you all the happiness in the world today and always.
+      <br />You’re the best thing that ever happened to me! 💖
+    </p>
+    <div class="heart">❤️</div>
+    <button class="button" onclick="goToDescriptionPage()">
+      Click for a surprise!
+    </button>
+
+    <script>
+      function goToDescriptionPage() {
+        // Redirect to the second page
+        window.location.href = "description.html";
+      }
+    </script>
+  </body>
+</html>
